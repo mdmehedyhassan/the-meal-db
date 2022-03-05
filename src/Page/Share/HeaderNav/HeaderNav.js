@@ -1,4 +1,3 @@
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -30,16 +29,7 @@ const HeaderNav = () => {
                                     API
                                 </button>
                             </Link>
-                            <a href="https://www.facebook.com/mehedysr" target="_blank" rel="noopener noreferrer">
-                                <button className="btn btn-primary m-1">
-                                    <FontAwesomeIcon icon={faFacebook} />
-                                </button>
-                            </a>
-                            <a href="https://www.linkedin.com/in/md-mehedy-hassan/" target="_blank" rel="noopener noreferrer">
-                                <button className="btn btn-warning m-1">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </button>
-                            </a>
+                            
                             <div>
                                 <button
                                     style={{ width: '40px' }}
