@@ -1,14 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const LatestMealsDetails = (props) => {
+const RandomMealsDetails = () => {
     const [meal, setMeal] = useState({});
     useEffect(() => {
-        const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${props.mealName}`;
+        const url = `https://www.themealdb.com/api/json/v1/1/random.php`;
         axios(url)
             .then(res => setMeal(res.data.meals[0]))
             .catch(err => console.log(err))
-    }, [props.mealName]);
+    }, []);
     return (
         <div className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
             <div className="text-center h-100 box-style-global p-3">
@@ -19,4 +19,4 @@ const LatestMealsDetails = (props) => {
     );
 };
 
-export default LatestMealsDetails;
+export default RandomMealsDetails;
