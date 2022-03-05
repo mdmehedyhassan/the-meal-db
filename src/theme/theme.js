@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
         border-top: 5px solid ${props => props.theme.text}
     }
     
-    .box-style-global:hover{
+    .box-style-global:hover, .box-style-global-child img:hover{
         box-shadow: ${props => props.theme.boxShadowStyle};
         border-radius: 10px;
     }

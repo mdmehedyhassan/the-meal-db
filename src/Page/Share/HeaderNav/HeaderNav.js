@@ -29,7 +29,12 @@ const HeaderNav = () => {
                                     API
                                 </button>
                             </Link>
-                            
+                            <Link to="/categories">
+                                <button className="btn btn-outline-info m-1">
+                                    Categories
+                                </button>
+                            </Link>
+
                             <div>
                                 <button
                                     style={{ width: '40px' }}
