@@ -1,5 +1,5 @@
 import React from 'react';
-import About from '../Share/About/About';
+import Footer from '../Share/Footer/Footer';
 import HeaderNav from '../Share/HeaderNav/HeaderNav';
 import APIDetails from './APIDetails';
 
@@ -8,7 +8,7 @@ const API = () => {
         <div className="container">
             <HeaderNav/>
             <APIDetails/>
-            <About/>
+            <Footer/>
         </div>
     );
 };

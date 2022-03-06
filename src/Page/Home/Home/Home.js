@@ -1,8 +1,8 @@
 import React from 'react';
-import About from '../../Share/About/About';
+import Footer from '../../Share/Footer/Footer';
 import HeaderNav from '../../Share/HeaderNav/HeaderNav';
-import BrowseByName from '../BrowseByname/BrowseByName';
-import BrowseCountry from '../BrowseCountry/BrowseCountry';
+import BrowseByName from '../../Share/BrowseByname/BrowseByName';
+import BrowseCountry from '../../Share/BrowseCountry/BrowseCountry';
 import HomeHeader from '../HomeHeader/HomeHeader';
 import LatestMeals from '../LatestMeals/LatestMeals';
 import PopularIngredients from '../PopularIngredients/PopularIngredients';
@@ -22,7 +22,7 @@ const Home = () => {
             <RandomIngredients/>
             <BrowseCountry/>
             <BrowseByName/>
-            <About/>
+            <Footer/>
         </div>
     );
 };

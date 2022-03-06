@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Share/Footer/Footer';
 import HeaderNav from '../Share/HeaderNav/HeaderNav';
-import CategoriesDetails from './CategoriesDetails';
+import IngredientsDetails from './IngredientsDetails';
 
-const Categories = () => {
+const Ingredients = () => {
     return (
         <div className="container">
-            <HeaderNav />
-            <CategoriesDetails/>
-            <Footer />
+            <HeaderNav/>
+            <IngredientsDetails/>
+            <Footer/>
         </div>
     );
 };
 
-export default Categories;
+export default Ingredients;

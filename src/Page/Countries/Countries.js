@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Share/Footer/Footer';
+import BrowseCountry from '../Share/BrowseCountry/BrowseCountry';
 import HeaderNav from '../Share/HeaderNav/HeaderNav';
-import CategoriesDetails from './CategoriesDetails';
 
-const Categories = () => {
+const Countries = () => {
     return (
         <div className="container">
-            <HeaderNav />
-            <CategoriesDetails/>
-            <Footer />
+            <HeaderNav/>
+            <BrowseCountry/>
+            <Footer/>
         </div>
     );
 };
 
-export default Categories;
+export default Countries;
