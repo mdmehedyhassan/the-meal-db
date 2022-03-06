@@ -22,7 +22,6 @@ const SingleIngredients = () => {
                 }
             })
     }, [ingredient]);
-    console.log(meals);
     return (
         <div className="container">
             <HeaderNav />

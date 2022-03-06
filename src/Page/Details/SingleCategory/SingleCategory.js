@@ -22,7 +22,6 @@ const SingleCategory = () => {
                 }
             })
     }, [category]);
-    console.log(meals);
     return (
         <div className="container">
             <HeaderNav />

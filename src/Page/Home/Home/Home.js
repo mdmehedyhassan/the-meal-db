@@ -11,7 +11,7 @@ import RandomMeals from '../RandomMeals/RandomMeals';
 import Search from '../Search/Search';
 
 const Home = () => {
-    document.title = "Home";
+    document.title = "TheMealDB";
     return (
         <div className="container">
             <HeaderNav/>

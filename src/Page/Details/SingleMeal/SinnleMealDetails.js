@@ -16,7 +16,6 @@ const SingleMealDetails = () => {
                 alert("Sorry meal Not Found");
             });
     }, [id])
-    console.log(meal);
     const idNumber = parseInt(id);
     const previousId = idNumber - 1;
     const nextId = idNumber + 1;

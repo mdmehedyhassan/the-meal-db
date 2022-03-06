@@ -23,7 +23,6 @@ const SingleCountry = () => {
                 }
             })
     }, [country]);
-    console.log(meals);
     return (
         <div className="container">
             <HeaderNav />

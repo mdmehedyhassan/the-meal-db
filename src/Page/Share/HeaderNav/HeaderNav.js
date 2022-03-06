@@ -11,14 +11,13 @@ const HeaderNav = () => {
     const [isDarkTheme, setIsDarkTheme] = useContext(ContextProvider);
     const location = useLocation();
     const getPath = location.pathname;
-    console.log(getPath);
     return (
         <>
             <GlobalStyles theme={isDarkTheme ? darkTheme : lightTheme} />
             <Navbar bg="danger" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img src={logo} alt="" />
+                        <img className="w-50" src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

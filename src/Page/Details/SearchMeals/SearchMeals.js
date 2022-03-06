@@ -13,7 +13,6 @@ const SearchMeals = () => {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
         axios(url)
             .then(res => {
-                console.log(res.data.meals)
                 if (res.data.meals === null) {
                     setMeals([])
                 }
