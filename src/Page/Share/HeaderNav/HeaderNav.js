@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { darkTheme, GlobalStyles, lightTheme } from '../../../theme/theme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../../image/logo-small.png'
 import { ContextProvider } from '../../../App';
 
 const HeaderNav = () => {
@@ -17,7 +16,7 @@ const HeaderNav = () => {
             <Navbar bg="danger" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img className="w-50" src={logo} alt="" />
+                        <h3 style={{fontWeight: 900, color: '#fc8c03d5' , textShadow: '1px 1px 5px black, -1px -1px 5px black'}}>TheMealDB</h3>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

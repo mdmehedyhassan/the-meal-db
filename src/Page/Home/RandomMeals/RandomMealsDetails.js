@@ -12,8 +12,9 @@ const RandomMealsDetails = () => {
     }, []);
     return (
         <Link
-            data-aos="fade-left"
-            data-aos-duration="3000"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
             to={`/singleMeal/${meal?.idMeal}`} className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
             <div className="text-center h-100 box-style-global p-3">
                 <img style={{ borderRadius: "10px" }} className="w-100" src={meal?.strMealThumb} alt="" />
