@@ -14,7 +14,11 @@ const CategoriesDetails = () => {
             <div className="row">
                 {
                     categories?.map(category => (
-                        <Link to={`/singleCategory/${category?.strCategory}`} key={category?.idCategory} className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <Link
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            to={`/singleCategory/${category?.strCategory}`} key={category?.idCategory} className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
                             <div className="text-center h-100 box-style-global p-3">
                                 <img style={{ borderRadius: "10px" }} className="w-100" src={category?.strCategoryThumb} alt={category?.strCategory} />
                                 <h5 className="p-2 all-name-global-style">{category?.strCategory}</h5>

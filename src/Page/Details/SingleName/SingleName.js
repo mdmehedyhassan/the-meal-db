@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import BrowseByName from '../../Share/BrowseByname/BrowseByName';
 import Footer from '../../Share/Footer/Footer';
+import GetMealComponents from '../../Share/GetMealComponents/GetMealComponents';
 import HeaderNav from '../../Share/HeaderNav/HeaderNav';
-import SingleNameDetails from './SingleNameDetails';
 
 const SingleName = () => {
+    document.title = "Name Meal";
     const { name } = useParams();
-    const [meals, setMeals] = useState();
+    const [meals, setMeals] = useState([]);
     useEffect(() => {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${name}`;
         axios(url)
@@ -34,7 +35,7 @@ const SingleName = () => {
                 }
                 <div className="row">
                     {
-                        meals?.map(meal => <SingleNameDetails key={meal.idMeal} meal={meal}></SingleNameDetails>)
+                        meals?.map(meal => <GetMealComponents key={meal.idMeal} meal={meal}></GetMealComponents>)
                     }
                 </div>
             </div>

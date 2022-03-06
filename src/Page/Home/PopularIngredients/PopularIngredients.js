@@ -1,5 +1,5 @@
 import React from 'react';
-import PopularIngredientsDetails from './PopularIngredientsDetails';
+import HomeIngredients from '../../Share/HomeIngredients/HomeIngredients';
 
 const ingredients = [
     "Chicken",
@@ -13,7 +13,7 @@ const PopularIngredients = () => {
         <h3 className="text-center mt-3"><b>Popular Ingredients</b></h3>
         <div className="row">
             {
-                ingredients.map(ingredient => <PopularIngredientsDetails key={ingredient} ingredient={ingredient}></PopularIngredientsDetails>)
+                ingredients.map((ingredient, index) => <HomeIngredients key={index} ingredient={ingredient}></HomeIngredients>)
             }
         </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { darkTheme, GlobalStyles, lightTheme } from '../../../theme/theme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,9 @@ import { ContextProvider } from '../../../App';
 
 const HeaderNav = () => {
     const [isDarkTheme, setIsDarkTheme] = useContext(ContextProvider);
+    const location = useLocation();
+    const getPath = location.pathname;
+    console.log(getPath);
     return (
         <>
             <GlobalStyles theme={isDarkTheme ? darkTheme : lightTheme} />
@@ -21,28 +24,28 @@ const HeaderNav = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto text-end">
                             <Link to="/home">
-                                <button className="btn btn-warning m-1">
+                                <button className={ `m-1 btn ${getPath==='/home' ? 'btn-warning': 'btn-outline-warning'} `}>
                                     Home
                                 </button>
                             </Link>
 
                             <Link to="/categories">
-                                <button className="btn btn-outline-warning m-1">
+                                <button className={ `m-1 btn ${getPath==='/categories' ? 'btn-warning': 'btn-outline-warning'} `}>
                                     Categories
                                 </button>
                             </Link>
                             <Link to="/countries">
-                                <button className="btn btn-outline-warning m-1">
+                                <button className={ `m-1 btn ${getPath==='/countries' ? 'btn-warning': 'btn-outline-warning'} `}>
                                     Countries
                                 </button>
                             </Link>
                             <Link to="/ingredients">
-                                <button className="btn btn-outline-warning m-1">
+                                <button className={ `m-1 btn ${getPath==='/ingredients' ? 'btn-warning': 'btn-outline-warning'} `}>
                                     Ingredients
                                 </button>
                             </Link>
                             <Link to="/api">
-                                <button className="btn btn-outline-warning m-1">
+                                <button className={ `m-1 btn ${getPath==='/api' ? 'btn-warning': 'btn-outline-warning'} `}>
                                     API
                                 </button>
                             </Link>

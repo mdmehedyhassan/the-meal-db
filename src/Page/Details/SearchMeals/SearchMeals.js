@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import Footer from '../../Share/Footer/Footer';
 import BrowseByName from '../../Share/BrowseByname/BrowseByName';
 import HeaderNav from '../../Share/HeaderNav/HeaderNav';
-import SearchMealsDetails from './SearchMealsDetails';
+import GetMealComponents from '../../Share/GetMealComponents/GetMealComponents';
 
 const SearchMeals = () => {
     const { search } = useParams();
@@ -41,7 +41,7 @@ const SearchMeals = () => {
                             <h3 className="text-center mt-3"><b>Your Searching Meals <span className="text-info">"{search}"</span></b></h3>
                             <div className="row">
                                 {
-                                    meals.map(meal => <SearchMealsDetails key={meal.idMeal} meal={meal}></SearchMealsDetails>)
+                                    meals.map(meal => <GetMealComponents key={meal.idMeal} meal={meal}></GetMealComponents>)
                                 }
                             </div>
                         </div>

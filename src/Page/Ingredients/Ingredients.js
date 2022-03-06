@@ -5,6 +5,7 @@ import HeaderNav from '../Share/HeaderNav/HeaderNav';
 import IngredientsDetails from './IngredientsDetails';
 
 const Ingredients = () => {
+    document.title = "Ingredients";
     return (
         <div className="container">
             <HeaderNav/>

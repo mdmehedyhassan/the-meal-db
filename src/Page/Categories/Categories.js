@@ -5,6 +5,7 @@ import HeaderNav from '../Share/HeaderNav/HeaderNav';
 import CategoriesDetails from './CategoriesDetails';
 
 const Categories = () => {
+    document.title = "Categories";
     return (
         <div className="container">
             <HeaderNav />

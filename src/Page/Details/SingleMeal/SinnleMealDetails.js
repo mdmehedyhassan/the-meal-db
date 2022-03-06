@@ -1,3 +1,4 @@
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faBackward, faForward } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
@@ -25,8 +26,8 @@ const SingleMealDetails = () => {
                 {
                     meal?.strMeal &&
                     <div className="text-center">
-                        <h2 className="m-5">{meal?.strMeal}</h2>
                         <img style={{ width: '100%', borderRadius: '10px' }} src={meal?.strMealThumb} alt="" />
+                        <h4 className="m-5"><small className="text-secondary">Name: </small>{meal?.strMeal}</h4>
 
                         <div>
                             Categories:
@@ -40,6 +41,11 @@ const SingleMealDetails = () => {
                                 {meal?.strArea}
                             </Link>
                         </div>
+                        <a href={meal?.strYoutube} target="_blank" rel="noopener noreferrer">
+                            <button className="btn btn-outline-warning">
+                                <FontAwesomeIcon icon={faYoutube}/> Watching in Youtube
+                            </button>
+                        </a>
                         <br />
 
                         {
@@ -54,6 +60,7 @@ const SingleMealDetails = () => {
                                 <FontAwesomeIcon icon={faForward} />
                             </Link>
                         }
+                        <p style={{ textAlign: 'justify', color: 'gray'}} >{meal?.strInstructions}</p>
 
                     </div>
                 }

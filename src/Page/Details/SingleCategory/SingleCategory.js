@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import BrowseByName from '../../Share/BrowseByname/BrowseByName';
 import Footer from '../../Share/Footer/Footer';
+import GetMealComponents from '../../Share/GetMealComponents/GetMealComponents';
 import HeaderNav from '../../Share/HeaderNav/HeaderNav';
-import SingleCategoryDetails from './SingleCategoryDetails';
 
 const SingleCategory = () => {
+    document.title = "Category Meal";
     const { category } = useParams();
     const [meals, setMeals] = useState([]);
     useEffect(() => {
@@ -35,7 +36,7 @@ const SingleCategory = () => {
                 }
                 <div className="row">
                     {
-                        meals?.map(meal => <SingleCategoryDetails key={meal.idMeal} meal={meal}></SingleCategoryDetails>)
+                        meals?.map(meal => <GetMealComponents key={meal.idMeal} meal={meal}></GetMealComponents>)
                     }
                 </div>
             </div>

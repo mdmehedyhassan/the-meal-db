@@ -5,6 +5,7 @@ import HeaderNav from '../../Share/HeaderNav/HeaderNav';
 import SingleMealDetails from './SinnleMealDetails';
 
 const SingleMeal = () => {
+    document.title = "Meal Details";
     return (
         <div className="container">
             <HeaderNav/>

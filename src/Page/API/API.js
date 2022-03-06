@@ -4,6 +4,7 @@ import HeaderNav from '../Share/HeaderNav/HeaderNav';
 import APIDetails from './APIDetails';
 
 const API = () => {
+    document.title = "API";
     return (
         <div className="container">
             <HeaderNav/>

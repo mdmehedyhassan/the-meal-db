@@ -5,6 +5,7 @@ import HeaderNav from '../Share/HeaderNav/HeaderNav';
 import BrowseByName from '../Share/BrowseByname/BrowseByName';
 
 const Countries = () => {
+    document.title = "Categories";
     return (
         <div className="container">
             <HeaderNav/>

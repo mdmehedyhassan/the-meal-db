@@ -14,11 +14,13 @@ import SingleCategory from './Page/Details/SingleCategory/SingleCategory';
 import SingleCountry from './Page/Details/SingleCountry/SingleCountry';
 import SingleName from './Page/Details/SingleName/SingleName';
 import SingleIngredients from './Page/Details/SingleIngredients/SingleIngredients';
+import AOS from 'aos';
+AOS.init();
 
 export const ContextProvider = createContext()
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   return (
     <ContextProvider.Provider value={[isDarkTheme, setIsDarkTheme]}>
       <Routes>
