@@ -1,5 +1,5 @@
 import React from 'react';
-import Algerian from '../../../image/country/Algerian.png';
+import { Link } from 'react-router-dom';
 import American from '../../../image/country/American.png';
 import Argentinian from '../../../image/country/Argentinian.png';
 import British from '../../../image/country/British.png';
@@ -23,7 +23,6 @@ import Norwegian from '../../../image/country/Norwegian.png';
 import Polish from '../../../image/country/Polish.png';
 import Portuguese from '../../../image/country/Portuguese.png';
 import Russian from '../../../image/country/Russian.png';
-import SaudiArabian from '../../../image/country/SaudiArabian.png';
 import Slovakian from '../../../image/country/Slovakian.png';
 import Spanish from '../../../image/country/Spanish.png';
 import Syrian from '../../../image/country/Syrian.png';
@@ -34,43 +33,112 @@ import Vietnamese from '../../../image/country/Vietnamese.png';
 
 
 const BrowseCountry = () => {
-    
     return (
         <div className="mt-5 mb-5 top-border-global-style">
             <h3 className="text-center mt-3"><b>Browse Country</b></h3>
-            <div className="row box-style-global-child">
-                <img style={{ width: '100px' }} src={Algerian} alt="" />
-                <img style={{ width: '100px' }} src={American} alt="" />
-                <img style={{ width: '100px' }} src={Argentinian} alt="" />
-                <img style={{ width: '100px' }} src={British} alt="" />
-                <img style={{ width: '100px' }} src={Canadian} alt="" />
-                <img style={{ width: '100px' }} src={Chinese} alt="" />
-                <img style={{ width: '100px' }} src={Croatian} alt="" />
-                <img style={{ width: '100px' }} src={Dutch} alt="" />
-                <img style={{ width: '100px' }} src={Egyptian} alt="" />
-                <img style={{ width: '100px' }} src={French} alt="" />
-                <img style={{ width: '100px' }} src={Greek} alt="" />
-                <img style={{ width: '100px' }} src={Indian} alt="" />
-                <img style={{ width: '100px' }} src={Irish} alt="" />
-                <img style={{ width: '100px' }} src={Italian} alt="" />
-                <img style={{ width: '100px' }} src={Jamaican} alt="" />
-                <img style={{ width: '100px' }} src={Japanese} alt="" />
-                <img style={{ width: '100px' }} src={Kenyan} alt="" />
-                <img style={{ width: '100px' }} src={Malaysian} alt="" />
-                <img style={{ width: '100px' }} src={Mexican} alt="" />
-                <img style={{ width: '100px' }} src={Moroccan} alt="" />
-                <img style={{ width: '100px' }} src={Norwegian} alt="" />
-                <img style={{ width: '100px' }} src={Polish} alt="" />
-                <img style={{ width: '100px' }} src={Portuguese} alt="" />
-                <img style={{ width: '100px' }} src={Russian} alt="" />
-                <img style={{ width: '100px' }} src={SaudiArabian} alt="" />
-                <img style={{ width: '100px' }} src={Slovakian} alt="" />
-                <img style={{ width: '100px' }} src={Spanish} alt="" />
-                <img style={{ width: '100px' }} src={Syrian} alt="" />
-                <img style={{ width: '100px' }} src={Thai} alt="" />
-                <img style={{ width: '100px' }} src={Tunisian} alt="" />
-                <img style={{ width: '100px' }} src={Turkish} alt="" />
-                <img style={{ width: '100px' }} src={Vietnamese} alt="" />
+            <div className="d-flex box-style-global-child">
+                <div className="">
+                    <Link to={`/singleCountry/Vietnamese`}>
+                        <img style={{ width: '100%' }} src={Vietnamese} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/American`}>
+                        <img style={{ width: '100%' }} src={American} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Argentinian`}>
+                        <img style={{ width: '100%' }} src={Argentinian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/British`}>
+                        <img style={{ width: '100%' }} src={British} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Canadian`}>
+                        <img style={{ width: '100%' }} src={Canadian} alt="" />
+                    </Link>
+                </div>
+                <div className="">
+                    <Link to={`/singleCountry/Chinese`}>
+                        <img style={{ width: '100%' }} src={Chinese} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Croatian`}>
+                        <img style={{ width: '100%' }} src={Croatian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Dutch`}>
+                        <img style={{ width: '100%' }} src={Dutch} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Egyptian`}>
+                        <img style={{ width: '100%' }} src={Egyptian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/French`}>
+                        <img style={{ width: '100%' }} src={French} alt="" />
+                    </Link>
+                </div>
+                <div className="">
+                    <Link to={`/singleCountry/Greek`}>
+                        <img style={{ width: '100%' }} src={Greek} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Indian`}>
+                        <img style={{ width: '100%' }} src={Indian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Irish`}>
+                        <img style={{ width: '100%' }} src={Irish} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Italian`}>
+                        <img style={{ width: '100%' }} src={Italian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Jamaican`}>
+                        <img style={{ width: '100%' }} src={Jamaican} alt="" />
+                    </Link>
+                </div>
+                <div className="">
+                    <Link to={`/singleCountry/Japanese`}>
+                        <img style={{ width: '100%' }} src={Japanese} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Kenyan`}>
+                        <img style={{ width: '100%' }} src={Kenyan} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Malaysian`}>
+                        <img style={{ width: '100%' }} src={Malaysian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Mexican`}>
+                        <img style={{ width: '100%' }} src={Mexican} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Moroccan`}>
+                        <img style={{ width: '100%' }} src={Moroccan} alt="" />
+                    </Link>
+                </div>
+                <div className="">
+                    <Link to={`/singleCountry/Norwegian`}>
+                        <img style={{ width: '100%' }} src={Norwegian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Polish`}>
+                        <img style={{ width: '100%' }} src={Polish} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Algerian`}>
+                        <img style={{ width: '100%' }} src={Portuguese} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Russian`}>
+                        <img style={{ width: '100%' }} src={Russian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Turkish`}>
+                        <img style={{ width: '100%' }} src={Turkish} alt="" />
+                    </Link>
+                </div>
+                <div className="">
+                    <Link to={`/singleCountry/Slovakian`}>
+                        <img style={{ width: '100%' }} src={Slovakian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Spanish`}>
+                        <img style={{ width: '100%' }} src={Spanish} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Syrian`}>
+                        <img style={{ width: '100%' }} src={Syrian} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Thai`}>
+                        <img style={{ width: '100%' }} src={Thai} alt="" />
+                    </Link>
+                    <Link to={`/singleCountry/Tunisian`}>
+                        <img style={{ width: '100%' }} src={Tunisian} alt="" />
+                    </Link>
+                </div>
             </div>
         </div>
     );

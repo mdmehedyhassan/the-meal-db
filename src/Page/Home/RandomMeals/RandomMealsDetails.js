@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const RandomMealsDetails = () => {
     const [meal, setMeal] = useState({});
@@ -10,12 +11,12 @@ const RandomMealsDetails = () => {
             .catch(err => console.log(err))
     }, []);
     return (
-        <div className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+        <Link to={`/singleMeal/${meal?.idMeal}`} className="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
             <div className="text-center h-100 box-style-global p-3">
                 <img style={{borderRadius: "10px"}} className="w-100" src={meal?.strMealThumb} alt="" />
-                <h5 className="p-2">{meal?.strMeal}</h5>
+                <h5 className="p-2 all-name-global-style">{meal?.strMeal}</h5>
             </div>
-        </div>
+        </Link>
     );
 };
 
